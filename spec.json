@@ -1,0 +1,15 @@
+{
+  "enabled": 1,
+  "hidden": true,
+  "description": "Jobsets",
+  "nixexprinput": "src",
+  "nixexprpath": "spec.nix",
+  "checkinterval": 60,
+  "schedulingshares": 10,
+  "enableemail": false,
+  "emailoverride": "",
+  "keepnr": 3,
+  "inputs": {
+    "src": { "type": "git", "value": "file:///repo.git", "emailresponsible": true }
+  }
+}
