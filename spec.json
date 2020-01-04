@@ -1,15 +1,20 @@
 {
   "enabled": 1,
-  "hidden": true,
-  "description": "Jobsets",
+  "hidden": false,
+  "description": "js",
   "nixexprinput": "src",
   "nixexprpath": "spec.nix",
-  "checkinterval": 60,
-  "schedulingshares": 10,
+  "checkinterval": 5,
+  "schedulingshares": 100,
   "enableemail": false,
   "emailoverride": "",
   "keepnr": 3,
   "inputs": {
-    "src": { "type": "git", "value": "file:///repo.git", "emailresponsible": true }
+    "src": { "type": "git", "emailresponsible": false,
+      "value": "git://github.com/tbenst/nix-data-science.git"
+    },
+    "nixpkgs": { "type": "git",  "emailresponsible": false,
+      "value": "git://github.com/NixOS/nixpkgs.git release-19.03"
+    }
   }
 }
