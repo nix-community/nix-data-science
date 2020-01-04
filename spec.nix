@@ -20,7 +20,7 @@ let
         "description": "js",
         "nixexprinput": "src",
         "nixexprpath": "jobsets/${name}.nix",
-        "checkinterval": 5,
+        "checkinterval": 60,
         "schedulingshares": 5,
         "enableemail": false,
         "emailoverride": "",

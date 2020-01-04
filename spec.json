@@ -4,7 +4,7 @@
   "description": "js",
   "nixexprinput": "src",
   "nixexprpath": "spec.nix",
-  "checkinterval": 5,
+  "checkinterval": 300,
   "schedulingshares": 100,
   "enableemail": false,
   "emailoverride": "",
