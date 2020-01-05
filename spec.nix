@@ -27,7 +27,7 @@ let
         "keepnr": 3,
         "inputs": {
           "src": { "type": "git", "emailresponsible": false,
-            "value": "git://github.com/tbenst/nix-data-science.git"
+            "value": "git://github.com/tbenst/nix-data.git"
           }
         }
       },

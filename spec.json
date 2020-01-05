@@ -11,7 +11,7 @@
   "keepnr": 3,
   "inputs": {
     "src": { "type": "git", "emailresponsible": false,
-      "value": "git://github.com/tbenst/nix-data-science.git"
+      "value": "git://github.com/tbenst/nix-data.git"
     },
     "nixpkgs": { "type": "git",  "emailresponsible": false,
       "value": "git://github.com/NixOS/nixpkgs.git release-19.03"
