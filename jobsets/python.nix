@@ -35,6 +35,5 @@ in {
   tensorflow = pkgs.python3Packages.tensorflow;
   tensorflow-probability = pkgs.python3Packages.tensorflow-probability;
   tifffile = pkgs.python3Packages.tifffile;
-  torchvision = pkgs.python3Packages.torchvision;
   tqdm = pkgs.python3Packages.tqdm;
 }
