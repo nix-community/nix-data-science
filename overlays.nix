@@ -37,6 +37,12 @@
 
       tensorflow = python-super.tensorflow.override {
         cudaSupport = true;
+        cudatoolkit = super.cudatoolkit_10_0;
+        cudnn = super.cudnn_cudatoolkit_10_0;
+        # TODO specify or caching will fail
+        # sse42Support = 
+        # avx2Support = 
+        # fmaSupport = 
       };
 
       opencv3 = python-super.opencv3.override {

@@ -24,7 +24,6 @@ in {
   pandas = pkgs.python3Packages.pandas;
   pims = pkgs.python3Packages.pims;
   pytorch = pkgs.python3Packages.pytorch;
-  torchvision = pkgs.python3Packages.torchvision;
   pyyaml = pkgs.python3Packages.pyyaml;
   requests = pkgs.python3Packages.requests;
   rpy2 = pkgs.python3Packages.rpy2;
@@ -35,5 +34,6 @@ in {
   tensorflow = pkgs.python3Packages.tensorflow;
   tensorflow-probability = pkgs.python3Packages.tensorflow-probability;
   tifffile = pkgs.python3Packages.tifffile;
+  torchvision = pkgs.python3Packages.torchvision;
   tqdm = pkgs.python3Packages.tqdm;
 }
