@@ -1,4 +1,4 @@
-# Nix Data Science
+# Nix Data
 
 This repository aims to define a set of packages for data-scientists with batteries-included. By using [Nix](https://nixos.org/nix/), the purely functional package manager, we strive to provide reproducible builds for the entire software stack, from low-level packages like glibc to high-level packages like PyTorch.
 
