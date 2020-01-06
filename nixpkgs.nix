@@ -1,7 +1,7 @@
 let
-  nixpkgsSHA = "b0bbacb52134a7e731e549f4c0a7a2a39ca6b481";
+  nixpkgsSHA = "7fa339238f00784aba7d15c7a369792aecdf305a";
   pkgs = import (fetchTarball
-    "https://github.com/NixOS/nixpkgs-channels/archive/${nixpkgsSHA}.tar.gz") {
+    "https://github.com/tbenst/nixpkgs/archive/${nixpkgsSHA}.tar.gz") {
       system = builtins.currentSystem;
       overlays = import ./overlays.nix;
       config = with pkgs.stdenv; {
