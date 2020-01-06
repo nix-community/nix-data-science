@@ -1,13 +1,9 @@
 [
   # top-level pkgs overlays
   (self: super: {
-    magma = super.magma.override {
-      mklSupport = true;
-    };
+    magma = super.magma.override { mklSupport = true; };
 
-    openmpi = super.openmpi.override {
-      cudaSupport = true;
-    };
+    openmpi = super.openmpi.override { cudaSupport = true; };
 
     # batteries included :)
     ffmpeg = super.ffmpeg-full.override {
@@ -24,15 +20,15 @@
 
   # python pkgs overlays
   (self: super: {
-  
+
     pythonOverrides = python-self: python-super: {
       numpy = python-super.numpy.override { blas = super.mkl; };
-      
+
       pytorch = python-super.pytorch.override {
-          mklSupport = true;
-          openMPISupport = true;
-          cudaSupport = true;
-          buildNamedTensor = true;
+        mklSupport = true;
+        openMPISupport = true;
+        cudaSupport = true;
+        buildNamedTensor = true;
       };
 
       tensorflow = python-super.tensorflow.override {
@@ -45,13 +41,23 @@
         # fmaSupport = 
       };
 
+      # Support for p3
+      tensorflow_p3 = python-super.tensorflow.override {
+        cudaSupport = true;
+        cudaCapabilities = [ "7.0" ];
+        sse42Support = true;
+        avx2Support = false;
+        fmaSupport = true;
+      };
+
       opencv3 = python-super.opencv3.override {
-          enableCuda = true;
-          enableFfmpeg = true;
+        enableCuda = true;
+        enableFfmpeg = true;
       };
     };
 
-    python3 = super.python3.override {packageOverrides = self.pythonOverrides;};
-  
+    python3 =
+      super.python3.override { packageOverrides = self.pythonOverrides; };
+
   })
 ]

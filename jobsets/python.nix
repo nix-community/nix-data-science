@@ -1,5 +1,4 @@
-let
-  pkgs = import ../nixpkgs.nix;
+let pkgs = import ../nixpkgs.nix;
 in {
   # is this needed for shell to be cached properly?
   # python-env = pkgs.python3.withPackages (ps: with ps; [
@@ -32,6 +31,7 @@ in {
   scipy = pkgs.python3Packages.scipy;
   seaborn = pkgs.python3Packages.seaborn;
   tensorflow = pkgs.python3Packages.tensorflow;
+  tensorflow_p3 = pkgs.python3Packages.tensorflow_p3;
   tensorflow-probability = pkgs.python3Packages.tensorflow-probability;
   tifffile = pkgs.python3Packages.tifffile;
   torchvision = pkgs.python3Packages.torchvision;
