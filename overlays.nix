@@ -44,6 +44,8 @@
       # Support for p3
       tensorflow_p3 = python-super.tensorflow.override {
         cudaSupport = true;
+        cudatoolkit = super.cudatoolkit_10_1;
+        cudnn = super.cudnn_cudatoolkit_10_1;
         cudaCapabilities = [ "7.0" ];
         sse42Support = true;
         avx2Support = false;
