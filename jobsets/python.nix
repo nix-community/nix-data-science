@@ -16,6 +16,7 @@ in {
   jupyterlab = pkgs.python3Packages.jupyterlab;
   matplotlib = pkgs.python3Packages.matplotlib;
   moviepy = pkgs.python3Packages.moviepy;
+  mlflow = pkgs.python3Packages.mlflow;
   mypy = pkgs.python3Packages.mypy;
   nbdime = pkgs.python3Packages.nbdime;
   numpy = pkgs.python3Packages.numpy;
