@@ -37,8 +37,8 @@
 
       tensorflow = python-super.tensorflow.override {
         cudaSupport = true;
-        cudatoolkit = super.cudatoolkit_10_0;
-        cudnn = super.cudnn_cudatoolkit_10_0;
+        cudatoolkit = super.cudatoolkit_10_1;
+        cudnn = super.cudnn_cudatoolkit_10_1;
         # TODO specify or caching will fail
         # sse42Support = 
         # avx2Support = 
