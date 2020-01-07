@@ -33,7 +33,7 @@ in {
   scipy = pkgs.python3Packages.scipy;
   seaborn = pkgs.python3Packages.seaborn;
   tensorflow = pkgs.python3Packages.tensorflow;
-  tensorflow_p3 = pkgs.python3Packages.tensorflow_p3;
+  tensorflow_avx2 = pkgs.python3Packages.tensorflow_avx2;
   tensorflow-probability = pkgs.python3Packages.tensorflow-probability;
   tifffile = pkgs.python3Packages.tifffile;
   torchvision = pkgs.python3Packages.torchvision;

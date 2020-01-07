@@ -29,26 +29,51 @@
         openMPISupport = true;
         cudaSupport = true;
         buildNamedTensor = true;
+        cudaArchList = [
+          "5.0"
+          "5.2"
+          "6.0"
+          "6.1"
+          "7.0"
+          "7.5"
+          "7.5+PTX"
+        ];
       };
 
       tensorflow = python-super.tensorflow.override {
         cudaSupport = true;
         cudatoolkit = super.cudatoolkit_10_1;
         cudnn = super.cudnn_cudatoolkit_10_1;
-        # TODO specify or caching will fail
-        # sse42Support = 
-        # avx2Support = 
-        # fmaSupport = 
+        # https://docs.nvidia.com/deeplearning/frameworks/tensorflow-user-guide/index.html
+        cudaCapabilities = [
+          "5.0"
+          "5.2"
+          "6.0"
+          "6.1"
+          "7.0"
+          "7.5"
+        ];
+        sse42Support = true;
+        avx2Support = false;
+        fmaSupport = true;
+
       };
 
-      # Support for p3
-      tensorflow_p3 = python-super.tensorflow.override {
+      tensorflow_avx2 = python-super.tensorflow.override {
         cudaSupport = true;
         cudatoolkit = super.cudatoolkit_10_1;
         cudnn = super.cudnn_cudatoolkit_10_1;
-        cudaCapabilities = [ "7.0" ];
+        # https://docs.nvidia.com/deeplearning/frameworks/tensorflow-user-guide/index.html
+        cudaCapabilities = [
+          "5.0"
+          "5.2"
+          "6.0"
+          "6.1"
+          "7.0"
+          "7.5"
+        ];
         sse42Support = true;
-        avx2Support = false;
+        avx2Support = true;
         fmaSupport = true;
       };
 
