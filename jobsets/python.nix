@@ -7,8 +7,11 @@ in {
 
   apache-airflow = pkgs.python3Packages.apache-airflow;
   av = pkgs.python3Packages.av;
+  bokeh = pkgs.python3Packages.bokeh;
+  cython = pkgs.python3Packages.cython;
   click = pkgs.python3Packages.click;
   dill = pkgs.python3Packages.dill;
+  future = pkgs.python3Packages.future;
   h5py = pkgs.python3Packages.h5py;
   ipython = pkgs.python3Packages.ipython;
   ipywidgets = pkgs.python3Packages.ipywidgets;
@@ -19,10 +22,12 @@ in {
   mlflow = pkgs.python3Packages.mlflow;
   mypy = pkgs.python3Packages.mypy;
   nbdime = pkgs.python3Packages.nbdime;
+  nose = pkgs.python3Packages.nose;
   numpy = pkgs.python3Packages.numpy;
   opencv3 = pkgs.python3Packages.opencv3;
   pandas = pkgs.python3Packages.pandas;
   pims = pkgs.python3Packages.pims;
+  pytest = pkgs.python3Packages.pytest;
   pytorch = pkgs.python3Packages.pytorch;
   pytorch-lightning = pkgs.python3Packages.pytorch-lightning;
   pyyaml = pkgs.python3Packages.pyyaml;
@@ -32,6 +37,7 @@ in {
   scikitlearn = pkgs.python3Packages.scikitlearn;
   scipy = pkgs.python3Packages.scipy;
   seaborn = pkgs.python3Packages.seaborn;
+  tables = pkgs.python3Packages.tables;
   tensorflow = pkgs.python3Packages.tensorflow;
   tensorflow_avx2 = pkgs.python3Packages.tensorflow_avx2;
   tensorflow-probability = pkgs.python3Packages.tensorflow-probability;
