@@ -1,6 +1,6 @@
 let
   # now tracking https://github.com/tbenst/nixpkgs/tree/nix-data
-  nixpkgsSHA = "40e11a4fd00b82805e7f647dcbd32aeaa1eeffb5";
+  nixpkgsSHA = "30510834d3232e324d96426d634b1c914fd5908f";
   pkgs = import (fetchTarball
     "https://github.com/tbenst/nixpkgs/archive/${nixpkgsSHA}.tar.gz") {
       system = builtins.currentSystem;
