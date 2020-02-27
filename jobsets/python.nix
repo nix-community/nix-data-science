@@ -30,7 +30,8 @@ in {
   pims = pkgs.python3Packages.pims;
   pytest = pkgs.python3Packages.pytest;
   pytorch = pkgs.python3Packages.pytorch;
-  pytorch-lightning = pkgs.python3Packages.pytorch-lightning;
+  # not yet merged...
+  # pytorch-lightning = pkgs.python3Packages.pytorch-lightning;
   pyyaml = pkgs.python3Packages.pyyaml;
   requests = pkgs.python3Packages.requests;
   rpy2 = pkgs.python3Packages.rpy2;
