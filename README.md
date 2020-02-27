@@ -6,8 +6,12 @@ By using the same overlays (roughly "compilation flags" for those not versed in 
 
 Collaboration is encouraged! Feel free to create pull-requests or file an issue if you'd like to contribute.
 
-## Design choices
-Currently, the repository targets the Python ecosystem, and builds against Intel's MKL and NVIDIA's CUDA/cuDNN.
+## Focus
+Currently, the repository targets the Python & R ecosystem, and builds against Intel's MKL and NVIDIA's CUDA/cuDNN. Please get in touch if you would like to add focus areas!
+
+## Get in touch
+
+Join the [nix-data Slack workspace](https://join.slack.com/t/nix-data/shared_invite/enQtOTI1MTQ2ODc1MjIwLTJkY2NlMWZmMGMwYTkzMjI2ZjMxZDBjZjEyMGU0MmY2M2U5ZDFmMjZjY2FiOWFkYmFkODI2ZmVjM2JjMTYwNmI).
 
 ## Repo format
 See https://www.reddit.com/r/NixOS/comments/8tkllx/standard_project_structure/ for more info.

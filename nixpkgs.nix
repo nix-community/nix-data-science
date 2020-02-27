@@ -1,8 +1,8 @@
 let
-  # now tracking https://github.com/tbenst/nixpkgs/tree/nix-data
-  nixpkgsSHA = "40e11a4fd00b82805e7f647dcbd32aeaa1eeffb5";
+  # now tracking 20.03-release
+  nixpkgsSHA = "be346a1f4bd9bf272c1388b7791cdb0f28bfa2fb";
   pkgs = import (fetchTarball
-    "https://github.com/tbenst/nixpkgs/archive/${nixpkgsSHA}.tar.gz") {
+    "https://github.com/NixOS/nixpkgs/archive/${nixpkgsSHA}.tar.gz") {
       system = builtins.currentSystem;
       overlays = import ./overlays.nix;
       config = with pkgs.stdenv; {
