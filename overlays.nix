@@ -81,6 +81,11 @@
         enableCuda = true;
         enableFfmpeg = true;
       };
+
+      opencv4 = python-super.opencv4.override {
+        enableCuda = true;
+        enableFfmpeg = true;
+      };
     };
 
     python3 =

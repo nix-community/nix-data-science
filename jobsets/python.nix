@@ -26,6 +26,7 @@ in {
   nose = pkgs.python3Packages.nose;
   numpy = pkgs.python3Packages.numpy;
   opencv3 = pkgs.python3Packages.opencv3;
+  opencv4 = pkgs.python3Packages.opencv4;
   pandas = pkgs.python3Packages.pandas;
   pims = pkgs.python3Packages.pims;
   pytest = pkgs.python3Packages.pytest;
