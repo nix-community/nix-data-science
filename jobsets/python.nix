@@ -14,6 +14,7 @@ in {
   future = pkgs.python3Packages.future;
   h5py = pkgs.python3Packages.h5py;
   ipython = pkgs.python3Packages.ipython;
+  imgaug = pkgs.python3Packages.imgaug;
   ipywidgets = pkgs.python3Packages.ipywidgets;
   joblib = pkgs.python3Packages.joblib;
   jupyterlab = pkgs.python3Packages.jupyterlab;
