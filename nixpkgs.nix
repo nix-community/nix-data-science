@@ -1,6 +1,6 @@
 let
-  # now tracking 20.03-release
-  nixpkgsSHA = "181974248e256249771d9d8bcd8935c9a77f725b";
+  # 20.03-release as of 2020-05-07
+  nixpkgsSHA = "e2bb73ce5f786b83e984b80199112f86b8a6cc9d";
   pkgs = import (fetchTarball
     "https://github.com/NixOS/nixpkgs/archive/${nixpkgsSHA}.tar.gz") {
       system = builtins.currentSystem;
