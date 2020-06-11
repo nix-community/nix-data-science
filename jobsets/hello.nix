@@ -2,6 +2,6 @@ let
   pkgs = import ../nixpkgs.nix;
 in {
   hello = pkgs.hello.overrideAttrs(old: {
-    madeup="hi6";
+    madeup="hi7";
   });
 }
