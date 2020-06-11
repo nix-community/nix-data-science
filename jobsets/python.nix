@@ -36,7 +36,7 @@ in {
   # pytorch-lightning = pkgs.python3Packages.pytorch-lightning;
   pyyaml = pkgs.python3Packages.pyyaml;
   requests = pkgs.python3Packages.requests;
-  rpy2 = pkgs.python3Packages.rpy2;
+  # rpy2 = pkgs.python3Packages.rpy2; 
   scikitimage = pkgs.python3Packages.scikitimage;
   scikitlearn = pkgs.python3Packages.scikitlearn;
   scipy = pkgs.python3Packages.scipy;
