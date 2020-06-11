@@ -20,8 +20,8 @@ in {
   jupyterlab = pkgs.python3Packages.jupyterlab;
   matplotlib = pkgs.python3Packages.matplotlib;
   moviepy = pkgs.python3Packages.moviepy;
-  mlflow = pkgs.python3Packages.mlflow;
-  mlflow-server = pkgs.mlflow-server;
+  # mlflow = pkgs.python3Packages.mlflow;
+  # mlflow-server = pkgs.mlflow-server;
   mypy = pkgs.python3Packages.mypy;
   nbdime = pkgs.python3Packages.nbdime;
   nose = pkgs.python3Packages.nose;
