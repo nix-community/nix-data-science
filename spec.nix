@@ -25,6 +25,7 @@ let
         "enableemail": false,
         "emailoverride": "",
         "keepnr": 3,
+        "type": 0,
         "inputs": {
           "src": { "type": "git", "emailresponsible": false,
             "value": "git://github.com/nix-community/nix-data.git"

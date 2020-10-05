@@ -1,7 +1,7 @@
 {
   "enabled": 1,
   "hidden": false,
-  "description": "js",
+  "description": "nix-data jobsets",
   "nixexprinput": "src",
   "nixexprpath": "spec.nix",
   "checkinterval": 300,
@@ -9,11 +9,16 @@
   "enableemail": false,
   "emailoverride": "",
   "keepnr": 3,
+  "type": 0,
   "inputs": {
-    "src": { "type": "git", "emailresponsible": false,
+    "src": {
+      "emailresponsible": false,
+      "type": "git",
       "value": "git://github.com/nix-community/nix-data.git"
     },
-    "nixpkgs": { "type": "git",  "emailresponsible": false,
+    "nixpkgs": {
+      "emailresponsible": false,
+      "type": "git",
       "value": "git://github.com/NixOS/nixpkgs.git release-19.03"
     }
   }
