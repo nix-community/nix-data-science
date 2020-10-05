@@ -1,5 +1,6 @@
 let pkgs = import ../nixpkgs.nix;
-in {
+in
+{
   # is this needed for shell to be cached properly?
   # python-env = pkgs.python3.withPackages (ps: with ps; [
   #   ...

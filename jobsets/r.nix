@@ -13,6 +13,6 @@ let
 in
 {
   inherit rPacks;
-  RStudio = pkgs.rstudioWrapper.override{ packages = rPacks; };
-  R = pkgs.rWrapper.override{ packages = rPacks; };
+  RStudio = pkgs.rstudioWrapper.override { packages = rPacks; };
+  R = pkgs.rWrapper.override { packages = rPacks; };
 }

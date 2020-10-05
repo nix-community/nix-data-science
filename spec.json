@@ -12,14 +12,14 @@
   "type": 0,
   "inputs": {
     "src": {
-      "emailresponsible": false,
       "type": "git",
-      "value": "git://github.com/nix-community/nix-data.git"
+      "value": "git://github.com/nix-community/nix-data.git",
+      "emailresponsible": false
     },
     "nixpkgs": {
-      "emailresponsible": false,
       "type": "git",
-      "value": "git://github.com/NixOS/nixpkgs.git release-19.03"
+      "value": "git://github.com/NixOS/nixpkgs.git nixos-unstable",
+      "emailresponsible": false
     }
   }
 }
