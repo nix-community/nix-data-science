@@ -1,8 +1,6 @@
 [
   # top-level pkgs overlays
   (self: super: {
-    magma = super.magma.override { mklSupport = true; };
-
     openmpi = super.openmpi.override { cudaSupport = true; };
 
     # batteries included :)
@@ -21,11 +19,15 @@
   # python pkgs overlays
   (self: super: {
 
-    pythonOverrides = python-self: python-super: {
-      numpy = python-super.numpy.override { blas = super.mkl; };
+    blas = super.blas.override {
+      blasProvider = self.mkl;
+    };
+    lapack = super.lapack.override {
+      lapackProvider = self.mkl;
+    };
 
+    pythonOverrides = python-self: python-super: {
       pytorch = python-super.pytorch.override {
-        mklSupport = true;
         openMPISupport = true;
         cudaSupport = true;
         buildNamedTensor = true;
