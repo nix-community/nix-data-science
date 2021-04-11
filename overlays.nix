@@ -79,6 +79,24 @@
         fmaSupport = true;
       };
 
+      tensorflow_2 = python-super.tensorflow_2.override {
+        cudaSupport = true;
+        cudatoolkit = super.cudatoolkit_10_1;
+        cudnn = super.cudnn_cudatoolkit_10_1;
+        # https://docs.nvidia.com/deeplearning/frameworks/tensorflow-user-guide/index.html
+        cudaCapabilities = [
+          "5.0"
+          "5.2"
+          "6.0"
+          "6.1"
+          "7.0"
+          "7.5"
+        ];
+        sse42Support = true;
+        avx2Support = false;
+        fmaSupport = true;
+      };
+
       opencv3 = python-super.opencv3.override {
         enableCuda = true;
         enableFfmpeg = true;
