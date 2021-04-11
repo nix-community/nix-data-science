@@ -1,6 +1,6 @@
 let
-  # 20.03-release as of 2020-05-07
-  nixpkgsSHA = "e2bb73ce5f786b83e984b80199112f86b8a6cc9d";
+  # 20.09-release as of 2021-04-11
+  nixpkgsSHA = "b39544be6c2e554fc494140d1d8d1b412b2762a5";
   pkgs = import
     (fetchTarball
       "https://github.com/NixOS/nixpkgs/archive/${nixpkgsSHA}.tar.gz")
