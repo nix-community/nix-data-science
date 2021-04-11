@@ -6,7 +6,7 @@ in
   #   ...
   # ]);
 
-  apache-airflow = pkgs.python3Packages.apache-airflow;
+  apache-airflow = pkgs.python37Packages.apache-airflow;
   av = pkgs.python3Packages.av;
   bokeh = pkgs.python3Packages.bokeh;
   cython = pkgs.python3Packages.cython;
@@ -43,9 +43,9 @@ in
   scipy = pkgs.python3Packages.scipy;
   seaborn = pkgs.python3Packages.seaborn;
   tables = pkgs.python3Packages.tables;
-  tensorflow = pkgs.python3Packages.tensorflow;
-  tensorflow_avx2 = pkgs.python3Packages.tensorflow_avx2;
-  tensorflow-probability = pkgs.python3Packages.tensorflow-probability;
+  tensorflow = pkgs.python37Packages.tensorflow;
+  tensorflow_avx2 = pkgs.python37Packages.tensorflow_avx2;
+  tensorflow-probability = pkgs.python37Packages.tensorflow-probability;
   tifffile = pkgs.python3Packages.tifffile;
   torchvision = pkgs.python3Packages.torchvision;
   tqdm = pkgs.python3Packages.tqdm;
