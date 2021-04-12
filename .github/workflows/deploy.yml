@@ -17,8 +17,8 @@ jobs:
         with:
           name: tbenst
           # If you chose signing key for write access
-          signingKey: '${{ secrets.CACHIX_SIGNING_KEY }}'
+          signingKey: '${{ secrets.NIX_DATA_CACHIX_SIGNING_KEY }}'
           # If you chose API tokens for write access OR if you have a private cache
-          # authToken: '${{ secrets.CACHIX_AUTH_TOKEN }}'
+          authToken: '${{ secrets.NIX_DATA_CACHIX_AUTH_TOKEN }}'
       - name: build
         run: nix-build jobsets/${{ matrix.jobset }}.nix
