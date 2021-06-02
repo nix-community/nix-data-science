@@ -11,7 +11,8 @@ Currently, the repository targets the Python & R ecosystem, and builds against I
 
 ## Get in touch
 
-Join the [nix-data Slack workspace](https://join.slack.com/t/nix-data/shared_invite/zt-ca8csgcz-N9Fyh~tnoZPY8x5lE_slFA).
+- [Matrix chat](https://matrix.to/#/#datascience:nixos.org) at `#datascience:nixos.org`
+- [Slack workspace](https://join.slack.com/t/nix-data/shared_invite/zt-ca8csgcz-N9Fyh~tnoZPY8x5lE_slFA)
 
 ## Repo format
 See https://www.reddit.com/r/NixOS/comments/8tkllx/standard_project_structure/ for more info.
