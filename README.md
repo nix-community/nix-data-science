@@ -12,6 +12,7 @@ Currently, the repository targets the Python & R ecosystem, and builds against I
 ## Get in touch
 
 - [Matrix chat](https://matrix.to/#/#datascience:nixos.org) at `#datascience:nixos.org`
+- [Discord](https://discord.gg/wXZDqVYgjZ) at #data-science
 - [Slack workspace](https://join.slack.com/t/nix-data/shared_invite/zt-ca8csgcz-N9Fyh~tnoZPY8x5lE_slFA)
 
 ## Repo format
